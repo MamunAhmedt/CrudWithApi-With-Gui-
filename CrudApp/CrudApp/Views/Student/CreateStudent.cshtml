@@ -1,0 +1,47 @@
+﻿@model CrudApp.Models.Student
+@{
+    ViewData["Title"] = "saveStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>saveStudent</h1>
+
+@using (Html.BeginForm("CreateStudent","Student",FormMethod.Post))
+{
+<table>
+    <tr>
+
+        <td>@Html.LabelFor(c => c.StudentName)</td>
+        <td>@Html.TextBoxFor(c => c.StudentName)</td>
+
+
+    </tr>
+    <tr>
+
+        <td>@Html.LabelFor(c => c.Address)</td>
+        <td>@Html.TextBoxFor(c => c.Address)</td>
+
+
+    </tr>
+    <tr>
+
+        <td>@Html.LabelFor(c => c.Phone)</td>
+        <td>@Html.TextBoxFor(c => c.Phone)</td>
+
+
+    </tr>
+    <tr>
+
+        <td>@Html.LabelFor(c => c.Email)</td>
+        <td>@Html.TextBoxFor(c => c.Email)</td>
+
+
+    </tr>
+    @Html.HiddenFor(c => c.StudentID);
+    <tr>
+        <td><input type="submit" value="save"></td>
+    </tr>
+
+</table> 
+
+}
