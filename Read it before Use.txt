@@ -1,0 +1,26 @@
+[Notes]
+
+=>no validation performed so there will some unexpected errors 
+
+=>this app can perform Crud with api and also without api 
+
+=>i have created two separete project one is api and another one is .net core web app then merged both in one 
+
+
+Example of urls Using Api:
+
+
+ 
+
+get:http://localhost:55360/api/studentApi/getAllStudent
+
+
+post:http://localhost:55360/api/studentApi/InsertStudent  Json Format{"id":0[as id is identity],
+                                                          "StudentName":"","Address":""."Phone":"","Email":""}
+
+
+put:http://localhost:55360/api/studentApi/InsertStudent  Json Format{"id":selected Id[as id is identity],
+                                                          "StudentName":"","Address":""."Phone":"","Email":""}
+
+delete:http://localhost:55360/api/studentApi/Delete?id=
+
